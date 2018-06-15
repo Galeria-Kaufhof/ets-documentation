@@ -13,6 +13,6 @@ It is a software development framework and ecosystem consisting of:
 - A collection of Maven archetypes which allows to quickly bootstrap library or application projects that make use of the ETS ecosystem out-of-the-box.
 
 
-## Getting started
+## Table of contents
 
-
+- [Rules](rules.md)
