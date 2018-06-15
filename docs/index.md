@@ -1,17 +1,18 @@
-# Welcome to MkDocs
+# ETS Documentation - Start
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## What is the ETS project?
 
-## Commands
+ETS is a collection of components and practices which allow to build applications and libraries with Scala.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+It is a software development framework and ecosystem consisting of:
 
-## Project layout
+- A strictly managed and reliably versioned Maven POM set which allows to build Scala libraries or applications where conflict-free interoperation of all ETS-covered external dependencies their transitive dependencies is guaranteed
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- A collection of useful libraries built on top of this approach, which are guaranteed to work seamlessly with ETS-covered external dependencies and other ETS libraries
+
+- A collection of Maven archetypes which allows to quickly bootstrap library or application projects that make use of the ETS ecosystem out-of-the-box.
+
+
+## Getting started
+
+
