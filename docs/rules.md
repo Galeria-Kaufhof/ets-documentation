@@ -14,8 +14,8 @@ This document describes the code, architecture, and lifecycle rules that are obl
 - All public ETS components must be released under [The MIT License](https://opensource.org/licenses/MIT) and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors
 
 
+## Naming and namespacing rules
 
+- ETS Software uses the Java namespace `de.kaufhof.ets`
 
-## Naming rules
-
-
+- Within this namespace, each component has its own namespace/artifactId which must start with ` ets-`, e.g. `ets-library-parent`
