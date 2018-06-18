@@ -13,7 +13,7 @@ The result is a collection of components with publicly artifacts, where artifact
 
 Thus, for example, the "ETS version 1 release" is the collection of all 1.x.x versions of the different ETS components.
 
-Because there is no central ETS artifact, releases of the general ETS ecosystem are not specified using a `major.minor.patch` schema. Instead, the concrete state of an "ETS version 1 release" is in constant flux - at a given point in time, it could be a collection of `ets-elasticsearch-rest-connector 1.4.3`, `ets-filestorage 1.2.0`, and `ets-akka-stream-utils 1.9.5`, and choosing from a subset of these components, and even choosing non-latest 1.x.x version of these components, as a basis for your "ETS version 1"-based application is legit and safe in terms of interoperability of the components.
+Because there is no central ETS artifact, releases of the general ETS ecosystem are not specified using a `major.minor.patch` schema. Instead, the concrete state of an "ETS version 1 release" is in constant flux - at a given point in time, it could be a collection of `ets-elasticsearch-rest-connector 1.4.3`, `ets-filestorage 1.2.0`, and `ets-akka-stream-utils 1.9.5`, and choosing from a subset of these components as a basis for your "ETS version 1"-based application is legit and safe in terms of interoperability of the components - as long as you don't "pin" your dependency definitions to a specific version of an ETS component, and instead use a range definition (`[1.0.0,2)`).
 
 
 ## Git branching and tagging
@@ -29,9 +29,10 @@ All ETS component git repositories follow these rules:
 - Thus, `<current-major + 1>` becomes the new `<current-major>`
 - Again, the latest version of the upcoming but not yet released `<current-major+1>` version of the component is developed in the `master` branch
 
+
 ### Example:
 
-Let's assume that ETS has already been released in versions `1` and `2`, and work on a version `3` release are ongoing. In this case, the git branch and tag structure of a hypothetical ETS component `ets-foo-connector` might look as follows:
+Let's assume that ETS has already been released in versions `1` and `2`, and work on a version `3` release is ongoing. In this case, the git branch and tag structure of a hypothetical ETS component `ets-foo-connector` might look as follows:
 
 - A branch `master` exists, containing the current work that is underway to prepare release `ets-foo-connector 3.0.0` for the upcoming ETS version 3 release
 - A branch `1.x.x` exists, because `ets-foo-connector` was part of the ETS version 1 release; it contains the latest code for this major version, up to and including a couple of not-yet-released changes for a bugfix that will be released as `ets-foo-connector 1.2.1`
