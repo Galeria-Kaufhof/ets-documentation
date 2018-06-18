@@ -20,9 +20,9 @@ It is a software development framework and ecosystem consisting of:
 
 
 ### Official ETS libraries
-- ElasticSearch REST Connector: [project home](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector), [documentation](libraries/elasticsearch-rest-connector/index.md)
-- Swift Object Store Adapter: [project home](https://github.com/Galeria-Kaufhof/ets-filestorage), [documentation](libraries/ets-filestorage/index.md)
-- Utilities and Stages for Akka Streams: [project home](https://github.com/Galeria-Kaufhof/ets-akka-stream-utils), [documentation](libraries/ets-akka-stream-utils/index.md)
+- ElasticSearch REST Connector: [project home](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector), [documentation](libraries/ElasticSearch-REST-Connector/index.md)
+- Swift Object Store Adapter: [project home](https://github.com/Galeria-Kaufhof/ets-filestorage), [documentation](libraries/Filestorage/index.md)
+- Utilities and Stages for Akka Streams: [project home](https://github.com/Galeria-Kaufhof/ets-akka-stream-utils), [documentation](libraries/Akka-Stream-Utils/index.md)
 
 
 ## ETS ecosystem version registry and compatibility matrix

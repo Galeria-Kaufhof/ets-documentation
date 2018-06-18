@@ -1,11 +1,11 @@
-# ETS Documentation - Rules
+# Rules
 
 This document describes the code, architecture, and lifecycle rules that are obligatory for all ETS components.
 
 
 ## General rules
 
-- All public ETS component code repositories have their home at https://github.com/Galeria-Kaufhof/ets-<name-of-component>
+- All public ETS component code repositories have their home at `https://github.com/Galeria-Kaufhof/ets-<name-of-component>`
 
 - All ETS components that release and publish artifacts used by others must follow the [Semantic Versioning 2.0.0 guidelines](https://semver.org/spec/v2.0.0.html) for versioning their releases
 
