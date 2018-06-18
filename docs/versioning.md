@@ -13,7 +13,7 @@ The result is a collection of components with publicly artifacts, where artifact
 
 Thus, for example, the "ETS version 1 release" is the collection of all 1.x.x versions of the different ETS components.
 
-Because there is no central ETS artifact, ETS release versions are not defined using a `major.minor.patch` schema. Instead, the concrete state of 
+Because there is no central ETS artifact, releases of the general ETS ecosystem are not specified using a `major.minor.patch` schema. Instead, the concrete state of an "ETS version 1 release" is in constant flux - at a given point in time, it could be a collection of `ets-elasticsearch-rest-connector 1.4.3`, `ets-filestorage 1.2.0`, and `ets-akka-stream-utils 1.9.5`, and choosing from a subset of these components, and even choosing non-latest 1.x.x version of these components, as a basis for your "ETS version 1"-based application is legit and safe in terms of interoperability of the components.
 
 
 ## Git branching and tagging
