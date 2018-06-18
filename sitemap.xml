@@ -41,17 +41,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/libraries/Akka-Stream-Utils/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/libraries/ElasticSearch-REST-Connector/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/libraries/ets-akka-stream-utils/</loc>
-     <lastmod>2018-06-18</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>/libraries/ets-filestorage/</loc>
+     <loc>/libraries/Filestorage/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
