@@ -89,6 +89,14 @@
             
     <li class="toctree-l2"><a href="#versioning">Versioning</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l3" href="#ets-core-and-components-versioning-relationships">ETS core and components versioning relationships</a></li>
+        
+            <li><a class="toctree-l3" href="#git-branching-and-tagging">Git branching and tagging</a></li>
+        
+        </ul>
+    
 
     </ul>
 	    </li>
@@ -163,20 +171,33 @@
             <div class="section">
               
                 <h1 id="versioning">Versioning</h1>
-<p>This document describes how different versions of ETS component code are managed, declared, structured and used during the development and release lifecycles of a component.</p>
-<p>B:</p>
-<p>master
-1.x.x
-2.x.x</p>
+<p>This document describes how different versions of ETS component source codes and artifacts are managed, declared, structured and used within the development and release lifecycles of a component.</p>
+<h2 id="ets-core-and-components-versioning-relationships">ETS core and components versioning relationships</h2>
+<p>While there is no single central "ETS application" which is maintained and released in an integrated and central fashion, we nevertheless handle the offical ETS ecosystem as one connected construct, and version accordingly.</p>
+<p>To do so, we define major ETS releases following the SemVer schema, thus subsuming ETS core components and ETS libraries under the same major version number for each release.</p>
+<p>The result is a collection of components with publicly artifacts, where artifacts that share the same major version number are guaranteed to be compatible with each other.</p>
+<p>Thus, for example, the "ETS version 1 release" is the collection of all 1.x.x versions of the different ETS components.</p>
+<p>Because there is no central ETS artifact, ETS release versions are not defined using a <code>major.minor.patch</code> schema. Instead, the concrete state of </p>
+<h2 id="git-branching-and-tagging">Git branching and tagging</h2>
+<p>All ETS component git repositories follow these rules:</p>
 <ul>
-<li>Branch Major.x.x sobald Major.0.0 released</li>
-<li>Tag Major.0.0 sobald Major.0.0 released</li>
+<li>As soon as the first major non-0.x.x version of a component is released, the git repository must have a tag named <code>&lt;current-major&gt;.0.0</code> which points to the commit with which the release milestone was reached</li>
+<li>As soon as the first major non-0.x.x version of a component is released, the git repository must have a branch named <code>&lt;current-major&gt;.x.x</code> whose tip points to the latest version of the code within the current major version</li>
+<li>Whenever new minor/patch versions are released within a major release, <code>&lt;major&gt;.&lt;minor&gt;.&lt;patch&gt;</code> tags must be created accordingly</li>
+<li>The latest version of the upcoming but not yet released minor/patch version of a released major version is developed in the <code>&lt;major&gt;.x.x</code> branch</li>
+<li>Meanwhile, the latest version of the upcoming but not yet released <code>&lt;current-major + 1&gt;</code> version of the component is developed in the <code>master</code> branch</li>
+<li>As soon as a new major version (= <code>&lt;current-major + 1&gt;</code>) is released, a tag named <code>&lt;current-major + 1&gt;.0.0</code> and a new branch <code>&lt;current-major + 1&gt;.0.0</code> must be created</li>
+<li>Thus, <code>&lt;current-major + 1&gt;</code> becomes the new <code>&lt;current-major&gt;</code></li>
+<li>Again, the latest version of the upcoming but not yet released <code>&lt;current-major+1&gt;</code> version of the component is developed in the <code>master</code> branch</li>
 </ul>
-<p>T:</p>
-<p>1.0.0
-1.0.1</p>
+<h3 id="example">Example:</h3>
+<p>Let's assume that ETS has already been released in versions <code>1</code> and <code>2</code>, and work on a version <code>3</code> release are ongoing. In this case, the git branch and tag structure of a hypothetical ETS component <code>ets-foo-connector</code> might look as follows:</p>
 <ul>
-<li>Es wird immer die Doku der aktuellsten releasten ETS Major nach gh-pages released</li>
+<li>A branch <code>master</code> exists, containing the current work that is underway to prepare release <code>ets-foo-connector 3.0.0</code> for the upcoming ETS version 3 release</li>
+<li>A branch <code>1.x.x</code> exists, because <code>ets-foo-connector</code> was part of the ETS version 1 release; it contains the latest code for this major version, up to and including a couple of not-yet-released changes for a bugfix that will be released as <code>ets-foo-connector 1.2.1</code></li>
+<li>The tags <code>1.0.0</code>, <code>1.2.0</code>, and <code>1.3.0</code> exist. They all point to commits that are also included within the commit history of branch <code>1.x.x</code>, and mark the different minor versions that this component released within the ETS version 1 release</li>
+<li>A branch <code>2.x.x</code> exists, because <code>ets-foo-connector</code> was part of the ETS version 2 release</li>
+<li>Only the tag <code>2.0.0</code> exists, because after the initial 2.x.x release, the project did not release any new versions under the ETS version 2 release</li>
 </ul>
               
             </div>
