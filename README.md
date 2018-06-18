@@ -14,3 +14,7 @@ grow it.
 
 
 Start at [docs/index.md](docs/index.md).
+
+
+### Building and publishing the documentation
+
