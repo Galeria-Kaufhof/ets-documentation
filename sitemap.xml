@@ -51,6 +51,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/libraries/ElasticSearch-REST-Connector/indexing/</loc>
+     <lastmod>2018-06-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/libraries/Filestorage/</loc>
      <lastmod>2018-06-18</lastmod>
      <changefreq>daily</changefreq>

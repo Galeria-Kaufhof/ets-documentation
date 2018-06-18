@@ -142,8 +142,33 @@
         },
         {
             "location": "/libraries/ElasticSearch-REST-Connector/",
+            "text": "ElasticSearch REST Connector\n\n\nTable of contents\n\n\n\n\nIndexing",
+            "title": "ElasticSearch REST Connector"
+        },
+        {
+            "location": "/libraries/ElasticSearch-REST-Connector/#elasticsearch-rest-connector",
             "text": "",
-            "title": "Home"
+            "title": "ElasticSearch REST Connector"
+        },
+        {
+            "location": "/libraries/ElasticSearch-REST-Connector/#table-of-contents",
+            "text": "Indexing",
+            "title": "Table of contents"
+        },
+        {
+            "location": "/libraries/ElasticSearch-REST-Connector/indexing/",
+            "text": "Indexing\n\n\nCreate an index\n\n\nBased on this documentation. For now, it is only implemented that you can create an index with a \nMappingobject\n or a \nJson-Object\n.\n\n\nelasticClient.createIndex(INDEXNAME, MAPPINGOBJECT): Future[ElasticIndexCreateResult]\n\n\n\nEach \ncreateIndex\n resulted in a \nscala.concurrent.Future[ElasticIndexCreateResult]\n with the following \nReturnParameter\n:\n\n\nElasticIndexCreateResult.created[Boolean]\nElasticIndexCreateResult.throwable[Option[Throwable]]\n\n\n\nIf the \ncreateIndex\n resulted without errors, \n.throwable\n is \nNone\n, if not, \n.throwable\n is filled as \nSome(throwable)\n with the underlying exception.",
+            "title": "Indexing"
+        },
+        {
+            "location": "/libraries/ElasticSearch-REST-Connector/indexing/#indexing",
+            "text": "",
+            "title": "Indexing"
+        },
+        {
+            "location": "/libraries/ElasticSearch-REST-Connector/indexing/#create-an-index",
+            "text": "Based on this documentation. For now, it is only implemented that you can create an index with a  Mappingobject  or a  Json-Object .  elasticClient.createIndex(INDEXNAME, MAPPINGOBJECT): Future[ElasticIndexCreateResult]  Each  createIndex  resulted in a  scala.concurrent.Future[ElasticIndexCreateResult]  with the following  ReturnParameter :  ElasticIndexCreateResult.created[Boolean]\nElasticIndexCreateResult.throwable[Option[Throwable]]  If the  createIndex  resulted without errors,  .throwable  is  None , if not,  .throwable  is filled as  Some(throwable)  with the underlying exception.",
+            "title": "Create an index"
         },
         {
             "location": "/libraries/Filestorage/",
