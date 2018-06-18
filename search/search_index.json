@@ -1,0 +1,104 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "ETS Documentation - Start\n\n\nWhat is the ETS project?\n\n\nETS is a collection of components and practices which allow to build applications and libraries with Scala.\n\n\nIt is a software development framework and ecosystem consisting of:\n\n\n\n\n\n\nA strictly managed and reliably versioned Maven POM set which allows to build Scala libraries or applications where conflict-free interoperation of all ETS-covered external dependencies their transitive dependencies is guaranteed\n\n\n\n\n\n\nA collection of useful libraries built on top of this approach, which are guaranteed to work seamlessly with ETS-covered external dependencies and other ETS libraries\n\n\n\n\n\n\nA collection of Maven archetypes which allows to quickly bootstrap library or application projects that make use of the ETS ecosystem out-of-the-box.\n\n\n\n\n\n\nTable of contents\n\n\nGeneral documentation\n\n\n\n\nRules\n\n\n\n\nOfficial ETS libraries\n\n\n\n\nElasticSearch REST Connector: \nproject home\n, \ndocumentation\n\n\nSwift Object Store Adapter: \nproject home\n, \ndocumentation\n\n\nUtilities and Stages for Akka Streams: \nproject home\n, \ndocumentation\n\n\n\n\nETS ecosystem version registry and compatibility matrix\n\n\n\n\n\n\n\n\nETS version\n\n\n0.1.x\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nElasticSearch\n\n\n6.x\n\n\n\n\n\n\n\n\n\n\n\n\nCassandra\n\n\n2.x\n\n\n\n\n\n\n\n\n\n\n\n\nOpenStack Object Storage",
+            "title": "ETS Documentation - Start"
+        },
+        {
+            "location": "/#ets-documentation-start",
+            "text": "",
+            "title": "ETS Documentation - Start"
+        },
+        {
+            "location": "/#what-is-the-ets-project",
+            "text": "ETS is a collection of components and practices which allow to build applications and libraries with Scala.  It is a software development framework and ecosystem consisting of:    A strictly managed and reliably versioned Maven POM set which allows to build Scala libraries or applications where conflict-free interoperation of all ETS-covered external dependencies their transitive dependencies is guaranteed    A collection of useful libraries built on top of this approach, which are guaranteed to work seamlessly with ETS-covered external dependencies and other ETS libraries    A collection of Maven archetypes which allows to quickly bootstrap library or application projects that make use of the ETS ecosystem out-of-the-box.",
+            "title": "What is the ETS project?"
+        },
+        {
+            "location": "/#table-of-contents",
+            "text": "",
+            "title": "Table of contents"
+        },
+        {
+            "location": "/#general-documentation",
+            "text": "Rules",
+            "title": "General documentation"
+        },
+        {
+            "location": "/#official-ets-libraries",
+            "text": "ElasticSearch REST Connector:  project home ,  documentation  Swift Object Store Adapter:  project home ,  documentation  Utilities and Stages for Akka Streams:  project home ,  documentation",
+            "title": "Official ETS libraries"
+        },
+        {
+            "location": "/#ets-ecosystem-version-registry-and-compatibility-matrix",
+            "text": "ETS version  0.1.x         ElasticSearch  6.x       Cassandra  2.x       OpenStack Object Storage",
+            "title": "ETS ecosystem version registry and compatibility matrix"
+        },
+        {
+            "location": "/archetypes/",
+            "text": "",
+            "title": "Archetypes"
+        },
+        {
+            "location": "/architecture/",
+            "text": "",
+            "title": "Architecture"
+        },
+        {
+            "location": "/building-libraries/",
+            "text": "",
+            "title": "Building libraries"
+        },
+        {
+            "location": "/building-services/",
+            "text": "",
+            "title": "Building services"
+        },
+        {
+            "location": "/releasing/",
+            "text": "",
+            "title": "Releasing"
+        },
+        {
+            "location": "/rules/",
+            "text": "ETS Documentation - Rules\n\n\nThis document describes the code, architecture, and lifecycle rules that are obligatory for all ETS components.\n\n\nGeneral rules\n\n\n\n\n\n\nAll public ETS component code repositories have their home at https://github.com/Galeria-Kaufhof/ets-\n\n\n\n\n\n\nAll ETS components that release and publish artifacts used by others must follow the \nSemantic Versioning 2.0.0 guidelines\n for versioning their releases\n\n\n\n\n\n\nAll public ETS components must ship with a root folder CHANGELOG.md file that follows the \nKeep a Changelog 1.0.0\n guidelines\n\n\n\n\n\n\nAll public ETS components must be released under \nThe MIT License\n and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors\n\n\n\n\n\n\nNaming and namespacing rules\n\n\n\n\n\n\nETS Software uses the Java namespace \nde.kaufhof.ets\n\n\n\n\n\n\nWithin this namespace, each component has its own namespace/artifactId e.g. \nfilestorage\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage\n \n\n\n\n\n\n\nWithin a component's namespace, each subcomponent has its own namespace/artifactId e.g. \ncore\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage.core\n \n\n\n\n\n\n\nThe id of all artifacts an ETS component releases must start with \nets-\n, e.g. \nets-library-parent\n\n\n\n\n\n\nIf your component is an ETS library or application, then if it has only one subcomponent, its artifactId must end with \n-core\n, e.g. \nets-filestorage-core\n; additional subcomponents can have arbitrary artifactId endings, e.g. \nets-filestorage-nfs\n\n\n\n\n\n\nSubcomponents of an ETS component must live in root subfolders which are named like the subcomponent's artifactId, e.g. \n/ets-filestorage-core\n\n\n\n\n\n\nWithin a subcomponent's subfolder, create a source code hierarchy following the pattern \nsrc/main/scala/de/kaufhof/ets/<component-name>/<subcomponent-name>\n, e.g. \nsrc/main/scala/de/kaufhof/ets/filestorage/core\n\n\n\n\n\n\nComponent and subcomponent names must be one-word all-lowercase UTF-8 \n[a-z0-9]\n strings",
+            "title": "ETS Documentation - Rules"
+        },
+        {
+            "location": "/rules/#ets-documentation-rules",
+            "text": "This document describes the code, architecture, and lifecycle rules that are obligatory for all ETS components.",
+            "title": "ETS Documentation - Rules"
+        },
+        {
+            "location": "/rules/#general-rules",
+            "text": "All public ETS component code repositories have their home at https://github.com/Galeria-Kaufhof/ets-    All ETS components that release and publish artifacts used by others must follow the  Semantic Versioning 2.0.0 guidelines  for versioning their releases    All public ETS components must ship with a root folder CHANGELOG.md file that follows the  Keep a Changelog 1.0.0  guidelines    All public ETS components must be released under  The MIT License  and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors",
+            "title": "General rules"
+        },
+        {
+            "location": "/rules/#naming-and-namespacing-rules",
+            "text": "ETS Software uses the Java namespace  de.kaufhof.ets    Within this namespace, each component has its own namespace/artifactId e.g.  filestorage , resulting in the fully qualified namespace  de.kaufhof.ets.filestorage      Within a component's namespace, each subcomponent has its own namespace/artifactId e.g.  core , resulting in the fully qualified namespace  de.kaufhof.ets.filestorage.core      The id of all artifacts an ETS component releases must start with  ets- , e.g.  ets-library-parent    If your component is an ETS library or application, then if it has only one subcomponent, its artifactId must end with  -core , e.g.  ets-filestorage-core ; additional subcomponents can have arbitrary artifactId endings, e.g.  ets-filestorage-nfs    Subcomponents of an ETS component must live in root subfolders which are named like the subcomponent's artifactId, e.g.  /ets-filestorage-core    Within a subcomponent's subfolder, create a source code hierarchy following the pattern  src/main/scala/de/kaufhof/ets/<component-name>/<subcomponent-name> , e.g.  src/main/scala/de/kaufhof/ets/filestorage/core    Component and subcomponent names must be one-word all-lowercase UTF-8  [a-z0-9]  strings",
+            "title": "Naming and namespacing rules"
+        },
+        {
+            "location": "/versioning/",
+            "text": "",
+            "title": "Versioning"
+        },
+        {
+            "location": "/libraries/elasticsearch-rest-connector/",
+            "text": "",
+            "title": "Home"
+        },
+        {
+            "location": "/libraries/ets-akka-stream-utils/",
+            "text": "",
+            "title": "Home"
+        },
+        {
+            "location": "/libraries/ets-filestorage/",
+            "text": "",
+            "title": "Home"
+        }
+    ]
+}
