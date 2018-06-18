@@ -17,6 +17,7 @@ It is a software development framework and ecosystem consisting of:
 
 ### General documentation
 - [Rules](rules.md)
+- [Versioning](versioning.md)
 
 
 ### Official ETS libraries
