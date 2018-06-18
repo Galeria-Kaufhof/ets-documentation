@@ -11,8 +11,10 @@ ETS is a collection of components and practices which allow to build application
 
 The ETS Documentation project is the central place to learn how to work within the ETS ecosystem and how to extend and grow it.
 
+To view the current release of the HTML version of the ETS documentation, go to [https://galeria-kaufhof.github.io/ets-documentation/](https://galeria-kaufhof.github.io/ets-documentation/).
 
-Start at [docs/index.md](docs/index.md).
+To browse the latest available content within this branch, start at [docs/index.md](docs/index.md).
+
 
 
 ### Building and publishing the documentation
