@@ -41,9 +41,19 @@
             "title": "Archetypes"
         },
         {
-            "location": "/architecture/",
+            "location": "/architecture-and-philosophy/",
+            "text": "Architecture and Philosophy\n\n\n\n\nPhilosophy\n\n\n\n\nWe upgrade all external dependencies (including Scala and the JVM) to the most recent stable version as soon as possible\n\n\nWe believe that is",
+            "title": "Architecture and Philosophy"
+        },
+        {
+            "location": "/architecture-and-philosophy/#architecture-and-philosophy",
             "text": "",
-            "title": "Architecture"
+            "title": "Architecture and Philosophy"
+        },
+        {
+            "location": "/architecture-and-philosophy/#philosophy",
+            "text": "We upgrade all external dependencies (including Scala and the JVM) to the most recent stable version as soon as possible  We believe that is",
+            "title": "Philosophy"
         },
         {
             "location": "/building-libraries/",
@@ -62,7 +72,7 @@
         },
         {
             "location": "/rules/",
-            "text": "Rules\n\n\nThis document describes the code, architecture, and lifecycle rules that are obligatory for all ETS components.\n\n\nGeneral rules\n\n\n\n\n\n\nAll public ETS component code repositories have their home at \nhttps://github.com/Galeria-Kaufhof/ets-<name-of-component>\n\n\n\n\n\n\nAll ETS components that release and publish artifacts used by others must follow the \nSemantic Versioning 2.0.0 guidelines\n for versioning their releases\n\n\n\n\n\n\nAll public ETS components must ship with a root folder CHANGELOG.md file that follows the \nKeep a Changelog 1.0.0\n guidelines\n\n\n\n\n\n\nAll public ETS components must be released under \nThe MIT License\n and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors\n\n\n\n\n\n\nNaming and namespacing rules\n\n\n\n\n\n\nETS Software uses the Java namespace \nde.kaufhof.ets\n\n\n\n\n\n\nWithin this namespace, each component has its own namespace/artifactId e.g. \nfilestorage\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage\n \n\n\n\n\n\n\nWithin a component's namespace, each subcomponent has its own namespace/artifactId e.g. \ncore\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage.core\n \n\n\n\n\n\n\nThe id of all artifacts an ETS component releases must start with \nets-\n, e.g. \nets-library-parent\n\n\n\n\n\n\nIf your component is an ETS library or application, then if it has only one subcomponent, its artifactId must end with \n-core\n, e.g. \nets-filestorage-core\n; additional subcomponents can have arbitrary artifactId endings, e.g. \nets-filestorage-nfs\n\n\n\n\n\n\nSubcomponents of an ETS component must live in root subfolders which are named like the subcomponent's artifactId, e.g. \n/ets-filestorage-core\n\n\n\n\n\n\nWithin a subcomponent's subfolder, create a source code hierarchy following the pattern \nsrc/main/scala/de/kaufhof/ets/<component-name>/<subcomponent-name>\n, e.g. \nsrc/main/scala/de/kaufhof/ets/filestorage/core\n\n\n\n\n\n\nComponent and subcomponent names must be one-word all-lowercase UTF-8 \n[a-z0-9]\n strings",
+            "text": "Rules\n\n\nThis document describes the code, architecture, and lifecycle rules that are obligatory for all ETS components.\n\n\nGeneral rules\n\n\n\n\n\n\nAll public ETS component code repositories have their home at \nhttps://github.com/Galeria-Kaufhof/ets-<name-of-component>\n\n\n\n\n\n\nAll ETS components that release and publish artifacts used by others must follow the \nSemantic Versioning 2.0.0 guidelines\n for versioning their releases\n\n\n\n\n\n\nAll public ETS components must ship with a root folder \nCHANGELOG.md\n file that follows the \nKeep a Changelog 1.0.0\n guidelines\n\n\n\n\n\n\nAll public ETS components must be released under \nThe MIT License\n and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors\n\n\n\n\n\n\nNaming and namespacing rules\n\n\n\n\n\n\nETS Software uses the Java namespace \nde.kaufhof.ets\n\n\n\n\n\n\nWithin this namespace, each component has its own namespace/artifactId e.g. \nfilestorage\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage\n \n\n\n\n\n\n\nWithin a component's namespace, each subcomponent has its own namespace/artifactId e.g. \ncore\n, resulting in the fully qualified namespace \nde.kaufhof.ets.filestorage.core\n \n\n\n\n\n\n\nThe id of all artifacts an ETS component releases must start with \nets-\n, e.g. \nets-library-parent\n\n\n\n\n\n\nIf your component is an ETS library or application, then if it has only one subcomponent, its artifactId must end with \n-core\n, e.g. \nets-filestorage-core\n; additional subcomponents can have arbitrary artifactId endings, e.g. \nets-filestorage-nfs\n\n\n\n\n\n\nSubcomponents of an ETS component must live in root subfolders which are named like the subcomponent's artifactId, e.g. \n/ets-filestorage-core\n\n\n\n\n\n\nWithin a subcomponent's subfolder, create a source code hierarchy following the pattern \nsrc/main/scala/de/kaufhof/ets/<component-name>/<subcomponent-name>\n, e.g. \nsrc/main/scala/de/kaufhof/ets/filestorage/core\n\n\n\n\n\n\nComponent and subcomponent names must be one-word all-lowercase UTF-8 \n[a-z0-9]\n strings",
             "title": "Rules"
         },
         {
@@ -72,7 +82,7 @@
         },
         {
             "location": "/rules/#general-rules",
-            "text": "All public ETS component code repositories have their home at  https://github.com/Galeria-Kaufhof/ets-<name-of-component>    All ETS components that release and publish artifacts used by others must follow the  Semantic Versioning 2.0.0 guidelines  for versioning their releases    All public ETS components must ship with a root folder CHANGELOG.md file that follows the  Keep a Changelog 1.0.0  guidelines    All public ETS components must be released under  The MIT License  and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors",
+            "text": "All public ETS component code repositories have their home at  https://github.com/Galeria-Kaufhof/ets-<name-of-component>    All ETS components that release and publish artifacts used by others must follow the  Semantic Versioning 2.0.0 guidelines  for versioning their releases    All public ETS components must ship with a root folder  CHANGELOG.md  file that follows the  Keep a Changelog 1.0.0  guidelines    All public ETS components must be released under  The MIT License  and must be copyright Galeria Kaufhof GmbH if released by Galeria Kaufhof GmbH employees or contractors",
             "title": "General rules"
         },
         {
@@ -82,7 +92,12 @@
         },
         {
             "location": "/versioning/",
-            "text": "",
+            "text": "Versioning\n\n\nThis document describes how different versions of ETS component code are managed, declared, structured and used during the development and release lifecycles of a component.\n\n\nB:\n\n\nmaster\n1.x.x\n2.x.x\n\n\n\n\nBranch Major.x.x sobald Major.0.0 released\n\n\nTag Major.0.0 sobald Major.0.0 released\n\n\n\n\nT:\n\n\n1.0.0\n1.0.1\n\n\n\n\nEs wird immer die Doku der aktuellsten releasten ETS Major nach gh-pages released",
+            "title": "Versioning"
+        },
+        {
+            "location": "/versioning/#versioning",
+            "text": "This document describes how different versions of ETS component code are managed, declared, structured and used during the development and release lifecycles of a component.  B:  master\n1.x.x\n2.x.x   Branch Major.x.x sobald Major.0.0 released  Tag Major.0.0 sobald Major.0.0 released   T:  1.0.0\n1.0.1   Es wird immer die Doku der aktuellsten releasten ETS Major nach gh-pages released",
             "title": "Versioning"
         },
         {
