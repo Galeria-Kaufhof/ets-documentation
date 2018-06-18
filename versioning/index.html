@@ -177,7 +177,7 @@
 <p>To do so, we define major ETS releases following the SemVer schema, thus subsuming ETS core components and ETS libraries under the same major version number for each release.</p>
 <p>The result is a collection of components with publicly artifacts, where artifacts that share the same major version number are guaranteed to be compatible with each other.</p>
 <p>Thus, for example, the "ETS version 1 release" is the collection of all 1.x.x versions of the different ETS components.</p>
-<p>Because there is no central ETS artifact, releases of the general ETS ecosystem are not specified using a <code>major.minor.patch</code> schema. Instead, the concrete state of an "ETS version 1 release" is in constant flux - at a given point in time, it could be a collection of <code>ets-elasticsearch-rest-connector 1.4.3</code>, <code>ets-filestorage 1.2.0</code>, and <code>ets-akka-stream-utils 1.9.5</code>, and choosing from a subset of these components, and even choosing non-latest 1.x.x version of these components, as a basis for your "ETS version 1"-based application is legit and safe in terms of interoperability of the components.</p>
+<p>Because there is no central ETS artifact, releases of the general ETS ecosystem are not specified using a <code>major.minor.patch</code> schema. Instead, the concrete state of an "ETS version 1 release" is in constant flux - at a given point in time, it could be a collection of <code>ets-elasticsearch-rest-connector 1.4.3</code>, <code>ets-filestorage 1.2.0</code>, and <code>ets-akka-stream-utils 1.9.5</code>, and choosing from a subset of these components as a basis for your "ETS version 1"-based application is legit and safe in terms of interoperability of the components - as long as you don't "pin" your dependency definitions to a specific version of an ETS component, and instead use a range definition (<code>[1.0.0,2)</code>).</p>
 <h2 id="git-branching-and-tagging">Git branching and tagging</h2>
 <p>All ETS component git repositories follow these rules:</p>
 <ul>
@@ -191,7 +191,7 @@
 <li>Again, the latest version of the upcoming but not yet released <code>&lt;current-major+1&gt;</code> version of the component is developed in the <code>master</code> branch</li>
 </ul>
 <h3 id="example">Example:</h3>
-<p>Let's assume that ETS has already been released in versions <code>1</code> and <code>2</code>, and work on a version <code>3</code> release are ongoing. In this case, the git branch and tag structure of a hypothetical ETS component <code>ets-foo-connector</code> might look as follows:</p>
+<p>Let's assume that ETS has already been released in versions <code>1</code> and <code>2</code>, and work on a version <code>3</code> release is ongoing. In this case, the git branch and tag structure of a hypothetical ETS component <code>ets-foo-connector</code> might look as follows:</p>
 <ul>
 <li>A branch <code>master</code> exists, containing the current work that is underway to prepare release <code>ets-foo-connector 3.0.0</code> for the upcoming ETS version 3 release</li>
 <li>A branch <code>1.x.x</code> exists, because <code>ets-foo-connector</code> was part of the ETS version 1 release; it contains the latest code for this major version, up to and including a couple of not-yet-released changes for a bugfix that will be released as <code>ets-foo-connector 1.2.1</code></li>
