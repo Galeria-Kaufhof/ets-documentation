@@ -27,8 +27,17 @@ It is a software development framework and ecosystem consisting of:
 
 ## ETS ecosystem version registry and compatibility matrix
 
-| ETS version                | 0.1.x |   |   |   |
+| ETS version                | 0     | 1 |   |   |
 |----------------------------|-------|---|---|---|
 | ElasticSearch              | 6.x   |   |   |   |
 | Cassandra                  | 2.x   |   |   |   |
 | OpenStack Object Storage   |       |   |   |   |
+
+
+## Meta information
+
+This is the global documentation for the ETS version 0 release. See https://github.com/Galeria-Kaufhof/ets-documentation/tree/0.x.x for its source code.
+
+There is no documentation for previous ETS releases.
+
+The documentation for the upcoming ETS 1 release takes place at https://github.com/Galeria-Kaufhof/ets-documentation/tree/master.
