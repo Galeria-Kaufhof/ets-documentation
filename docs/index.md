@@ -32,6 +32,7 @@ It is a software development framework and ecosystem consisting of:
 |----------------------------|-------|---|---|---|
 | ElasticSearch              | 6.x   |   |   |   |
 | Cassandra                  | 2.x   |   |   |   |
+| Postgres                   | 9.6   |   |   |   |
 | OpenStack Object Storage   |       |   |   |   |
 
 
