@@ -6,6 +6,8 @@
 
 ETS is a collection of components and practices which allow to build applications and libraries with Scala.
 
+See the [list of all ETS components](https://github.com/topics/galeria-kaufhof-ets) on GitHub.
+
 
 ### About this project
 
