@@ -16,9 +16,9 @@ Note: read "ETS version" and "ETS release" as "version of the ETS component you 
 - Contribute accompanying documentation changes to the `ets-documentation` repository the same way that you contribute your code changes to the ETS component repository - all of the above rules apply; this means if your code changes demand documentation changes, you must also create a branch and PR on the `ets-documentation` repository, and your code PR description must reference your documentation PR
 
 
-## How contributions are backported
+## How contributions are integrated
 
-For each contribution, the release manager must decide if the contribution shall be backported
+For each contribution, the release manager must decide if the contribution shall only be integrated into the upcoming major ETS release, or if it should also be backported to already released ETS versions. 
 
 
 ## Without backporting
