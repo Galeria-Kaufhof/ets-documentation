@@ -39,8 +39,8 @@ This document describes the code, architecture, and lifecycle rules that are obl
 
 ## Example
 
-The source code for an ETS-compatible filestorage library would live at https://github.com/Galeria-Kaufhof/ets-filestorage.
+The source code for an ETS-compatible filestorage library would live at `https://github.com/Galeria-Kaufhof/ets-filestorage`.
 
 Its groupId + artifactId name would be `de.kaufhof.ets:ets-filestorage-core`.
 
-
+The Scala source code tree starts at `/ets-filestorage-core/src/main/scala/de/kaufhof/ets/filestorage/core`, with package names starting with `de.kaufhof.ets.filestorage.core`.
