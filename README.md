@@ -23,6 +23,6 @@ To browse the latest available content within this branch, start at [docs/index.
 
 Using this codebase, `mkdocs`, and GitHub pages, we regularly publish the documentation for the most recent version of the the current major release of ETS to https://galeria-kaufhof.github.io/ets-documentation/.
 
-To do so, install [mkdocs](https://www.mkdocs.org/#installation) locally, clone this repository, switch to branch `<current-major>.x.x`, and run `mkdocs`.
+To do so, install [mkdocs](https://www.mkdocs.org/#installation) locally, clone this repository, switch to branch `<current-major>.x.x`, and run `mkdocs gh-deploy`.
 
 Documentation for previous major versions of ETS will not be made available as HTML on our GitHub pages. Instead, the most recent published documentation will refer to previous documentation versions by linking directly to the `docs/index.md` file in the branch of the previous release on GitHub.
