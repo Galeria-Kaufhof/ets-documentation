@@ -24,12 +24,13 @@ These documents support those that extend and maintain ETS components.
 
 
 ### Official ETS libraries
-- ElasticSearch REST Connector: [project home](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector), [documentation](libraries/ElasticSearch-REST-Connector/index.md)
 - Swift Object Store Adapter: [project home](https://github.com/Galeria-Kaufhof/ets-filestorage), [documentation](libraries/Filestorage/index.md)
 - Utilities and Stages for Akka Streams: [project home](https://github.com/Galeria-Kaufhof/ets-akka-stream-utils), [documentation](libraries/Akka-Stream-Utils/index.md)
 
 
 ## ETS ecosystem version registry and compatibility matrix
+
+### External dependencies
 
 | ETS version                | 0     | 1 |   |   |
 |----------------------------|-------|---|---|---|
@@ -37,6 +38,16 @@ These documents support those that extend and maintain ETS components.
 | Cassandra                  | 2.x   |   |   |   |
 | Postgres                   | 9.6   |   |   |   |
 | OpenStack Object Storage   |       |   |   |   |
+
+
+### ETS library availability
+
+| ETS version                  | 0 | 1 |   |   |
+|------------------------------|---|---|---|---|
+| Filestorage                  | x |   |   |   |
+| Akka Stream Utils            | x |   |   |   |
+| [ElasticSearch REST Connector](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector) [[docs](libraries/ElasticSearch-REST-Connector/index.md)] | x |   |   |   |
+| OpenStack Object Storage     | x |   |   |   |
 
 
 ## Meta information
