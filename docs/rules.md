@@ -37,7 +37,7 @@ This document describes the code, architecture, and lifecycle rules that are obl
 - Component artifactIds must be at-least-one-word, possibly multiple-words-concatenated-by-hyphens all-lowercase UTF-8 `[a-z0-9]` strings (e.g. `ets-filestorage-core`)
 
 
-## Example
+### Example
 
 The source code for an ETS-compatible filestorage library would live at `https://github.com/Galeria-Kaufhof/ets-filestorage`.
 
