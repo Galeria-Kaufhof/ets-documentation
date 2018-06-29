@@ -15,39 +15,47 @@ It is a software development framework and ecosystem consisting of:
 
 ## Table of contents
 
+### General documentation
+
+- [Architecture & philosophy](architecture-and-philosophy.md)
+
+
 ### Documentation for maintainers
 
 These documents support those that extend and maintain ETS components.
 
-- [Rules](Maintaining-ETS/rules.md)
-- [Versioning](Maintaining-ETS/versioning.md)
+- [Rules](Contributing-to-and-maintaining-ETS/rules.md)
+- [Versioning](Contributing-to-and-maintaining-ETS/versioning.md)
+- [Contributing](Contributing-to-and-maintaining-ETS/contributing.md)
 
 
-### Official ETS libraries
-- Swift Object Store Adapter: [project home](https://github.com/Galeria-Kaufhof/ets-filestorage), [documentation](libraries/Filestorage/index.md)
-- Utilities and Stages for Akka Streams: [project home](https://github.com/Galeria-Kaufhof/ets-akka-stream-utils), [documentation](libraries/Akka-Stream-Utils/index.md)
+## ETS ecosystem overview
+
+### Version overview
+
+| ETS version                                                          | Lifecycle status    |
+|----------------------------------------------------------------------|---------------------|
+| [0](https://github.com/Galeria-Kaufhof/ets-documentation/tree/0.x.x) | Upcoming            |
 
 
-## ETS ecosystem version registry and compatibility matrix
+### Managed external dependencies
 
-### External dependencies
-
-| ETS version                | 0     | 1 |   |   |
-|----------------------------|-------|---|---|---|
-| ElasticSearch              | 6.x   |   |   |   |
-| Cassandra                  | 2.x   |   |   |   |
-| Postgres                   | 9.6   |   |   |   |
-| OpenStack Object Storage   |       |   |   |   |
+| ETS version              | 0   |
+|--------------------------|-----|
+| ElasticSearch            | 6.x |
+| Cassandra                | 2.x |
+| Postgres                 | 9.6 |
+| OpenStack Object Storage |     |
 
 
 ### ETS library availability
 
-| ETS version                  | 0 | 1 |   |   |
-|------------------------------|---|---|---|---|
-| Filestorage                  | x |   |   |   |
-| Akka Stream Utils            | x |   |   |   |
-| [ElasticSearch REST Connector](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector) [[docs](libraries/ElasticSearch-REST-Connector/index.md)] | x |   |   |   |
-| OpenStack Object Storage     | x |   |   |   |
+| ETS version                  | 0                                                                                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Filestorage                  | [code](https://github.com/Galeria-Kaufhof/ets-filestorage/tree/0.x.x),                  [docs](libraries/Filestorage/index.md)                  |
+| Akka Stream Utils            | [code](https://github.com/Galeria-Kaufhof/ets-akka-stream-utils/tree/0.x.x),            [docs](libraries/Akka-Stream-Utils/index.md)            |
+| ElasticSearch REST Connector | [code](https://github.com/Galeria-Kaufhof/ets-elasticsearch-rest-connector/tree/0.x.x), [docs](libraries/ElasticSearch-REST-Connector/index.md) |
+
 
 
 ## Meta information
@@ -55,5 +63,3 @@ These documents support those that extend and maintain ETS components.
 This is the global documentation for the ETS version 0 release. See https://github.com/Galeria-Kaufhof/ets-documentation/tree/0.x.x for its source code.
 
 There is no documentation for previous ETS releases.
-
-The documentation for the upcoming ETS 1 release takes place at https://github.com/Galeria-Kaufhof/ets-documentation/tree/master.

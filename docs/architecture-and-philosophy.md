@@ -6,7 +6,7 @@
 
 There is no such thing as an integrated and deployable "ETS software" artifact. Neither is it a software development framework.
 
-It is an ecosystem of components that are developed under the same [rules](Maintaining-ETS/rules.md), the same [versioning approach](Maintaining-ETS/versioning.md), and the same philosophy, which leads to a collection of artifacts that are guaranteed to play well together, and which can be used to build applications on top of them with a minimal amount of yak shaving. Additionally, the ecosystem provides helpers like our [archetypes](Using-ETS/archetypes.md) to boost development productivity even more.
+It is an ecosystem of components that are developed under the same [rules](Contributing-to-and-maintaining-ETS/rules.md), the same [versioning approach](Contributing-to-and-maintaining-ETS/versioning.md), and the same philosophy, which leads to a collection of artifacts that are guaranteed to play well together, and which can be used to build applications on top of them with a minimal amount of yak shaving. Additionally, the ecosystem provides helpers like our [archetypes](Using-ETS/archetypes.md) to boost development productivity even more.
 
 
 ## Philosophy
