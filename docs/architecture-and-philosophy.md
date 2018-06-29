@@ -2,7 +2,7 @@
 
 ## Architecture
 
-### ETS is not an artifact, it's an ecosystem
+### ETS is not a framework, it's an opinionated ecosystem
 
 There is no such thing as an integrated and deployable "ETS software" artifact. Neither is it a software development framework.
 
