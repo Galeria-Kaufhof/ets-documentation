@@ -18,13 +18,13 @@ This document describes the code, architecture, and lifecycle rules that are obl
 
 - The correct spelling of the long form name of ETS is `Galeria Kaufhof eShop Technology Stack`, the correct spelling of the medium form name is `eShop Technology Stack`, and the short form is `ETS`
 
-- ETS Software uses the Java namespace `de.kaufhof.ets`
+- ETS Software uses the Java namespace / groupId `de.kaufhof.ets`
 
-- Within this namespace, each component has its own namespace/artifactId e.g. `filestorage`, resulting in the fully qualified namespace `de.kaufhof.ets.filestorage` 
+- Within this namespace, each component has its own namespace, e.g. `filestorage`, resulting in the fully qualified namespace `de.kaufhof.ets.filestorage` 
 
-- Within a component's namespace, each subcomponent has its own namespace/artifactId e.g. `core`, resulting in the fully qualified namespace `de.kaufhof.ets.filestorage.core` 
+- Within a component's namespace, each subcomponent has its own namespace, e.g. `core`, resulting in the fully qualified namespace `de.kaufhof.ets.filestorage.core` 
 
-- The id of all artifacts an ETS component releases must start with `ets-`, e.g. `ets-library-parent`
+- The artifactId of all artifacts an ETS component releases must start with `ets-`, e.g. `ets-filestorage-core`
 
 - If your component is an ETS library or application, then if it has only one subcomponent, its artifactId must end with `-core`, e.g. `ets-filestorage-core`; additional subcomponents can have arbitrary artifactId endings, e.g. `ets-filestorage-nfs`
 
@@ -32,4 +32,15 @@ This document describes the code, architecture, and lifecycle rules that are obl
 
 - Within a subcomponent's subfolder, create a source code hierarchy following the pattern `src/main/scala/de/kaufhof/ets/<component-name>/<subcomponent-name>`, e.g. `src/main/scala/de/kaufhof/ets/filestorage/core`
 
-- Component and subcomponent names must be one-word all-lowercase UTF-8 `[a-z0-9]` strings
+- Component and subcomponent namespace segments must be one-word all-lowercase UTF-8 `[a-z0-9]` strings (e.g. `de.kaufhof.ets.filestorage.core`)
+
+- Component artifactIds must be at-least-one-word, possibly multiple-words-concatenated-by-hyphens all-lowercase UTF-8 `[a-z0-9]` strings (e.g. `ets-filestorage-core`)
+
+
+## Example
+
+The source code for an ETS-compatible filestorage library would live at https://github.com/Galeria-Kaufhof/ets-filestorage.
+
+Its groupId + artifactId name would be `de.kaufhof.ets:ets-filestorage-core`.
+
+
