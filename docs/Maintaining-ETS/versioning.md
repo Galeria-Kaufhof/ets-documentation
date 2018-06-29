@@ -1,6 +1,6 @@
 # Versioning
 
-This document describes how different versions of ETS component source codes and artifacts are managed, declared, structured and used within the development and release lifecycles of a component.
+This document describes how different versions of ETS component source codes and artifacts are managed, declared, structured and used within the development and release lifecycle of a component.
 
 
 ## ETS core and components versioning relationships
