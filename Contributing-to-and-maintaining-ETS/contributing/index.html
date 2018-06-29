@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Contributing - Galeria Kaufhof eShop Technology Stack Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Contributing";
+    var mkdocs_page_input_path = "Contributing-to-and-maintaining-ETS/contributing.md";
+    var mkdocs_page_url = "/Contributing-to-and-maintaining-ETS/contributing/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Galeria Kaufhof eShop Technology Stack Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">ETS Documentation - Start</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../architecture-and-philosophy/">Architecture and Philosophy</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Contributing to and maintaining ETS</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../building-libraries/">Building libraries</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Contributing</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#contributing">Contributing</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#general-rules-and-workflow">General rules and workflow</a></li>
+        
+            <li><a class="toctree-l4" href="#how-contributions-are-backported">How contributions are backported</a></li>
+        
+            <li><a class="toctree-l4" href="#without-backporting">Without backporting</a></li>
+        
+            <li><a class="toctree-l4" href="#with-backporting">With backporting</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../releasing/">Releasing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../rules/">Rules</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../versioning/">Versioning</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Using ETS</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Using-ETS/archetypes/">Archetypes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Using-ETS/building-applications/">Building applications</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Libraries</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">Akka Stream Utils</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../libraries/Akka-Stream-Utils/">Home</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">ElasticSearch REST Connector</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../libraries/ElasticSearch-REST-Connector/">Home</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../libraries/ElasticSearch-REST-Connector/indexing/">Indexing</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Filestorage</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../libraries/Filestorage/">Home</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Galeria Kaufhof eShop Technology Stack Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Contributing to and maintaining ETS &raquo;</li>
+        
+      
+    
+    <li>Contributing</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="contributing">Contributing</h1>
+<h2 id="general-rules-and-workflow">General rules and workflow</h2>
+<p>Note: read "ETS version" and "ETS release" as "version of the ETS component you want to contribute to" and "release of the ETS component you want to contribute to". We use the short form here to save bytes.</p>
+<ul>
+<li>Even if you have write access to an ETS component repository, always work in a branch to contribute changes</li>
+<li>Only release managers may push changes into the <code>master</code> branch and the <code>&lt;major&gt;.x.x</code> branches, and may do so only for release related tasks</li>
+<li>If you want your change to become part of an upcoming ETS release (with possible backporting to already released ETS versions), then branch from <code>master</code>, and make the PR against <code>master</code></li>
+<li>If you want your changes to be applied to one or more already released ETS versions, but not to the upcoming release, then branch from the <code>&lt;major&gt;.x.x</code> branch of the <em>lowest</em> ETS version you want to apply your changes to, and make the PR against this branch</li>
+<li>You can open a PR for your changes as soon as you have opened a branch for the changes, even while your branch is still work in progress. However, in this case the PR title must be prefixed with <code>WIP:</code></li>
+<li>Alternatively, open the PR only once your branch is ready to be merged</li>
+<li>force-push on your branch is permitted</li>
+<li>During development, rebase at least once, and do so the moment before offering the PR for merging</li>
+<li>It is recommended to rebase your branch whenever there is a change in the master</li>
+<li>Contribute accompanying documentation changes to the <code>ets-documentation</code> repository the same way that you contribute your code changes to the ETS component repository - all of the above rules apply; this means if your code changes demand documentation changes, you must also create a branch and PR on the <code>ets-documentation</code> repository, and your code PR description must reference your documentation PR</li>
+</ul>
+<h2 id="how-contributions-are-backported">How contributions are backported</h2>
+<p>For each contribution, the release manager must decide if the contribution shall be backported</p>
+<h2 id="without-backporting">Without backporting</h2>
+<ul>
+<li>The pull request is merged into the master, and the commit message of the merge must contain <code>closes: #&lt;id-of-pr&gt;</code></li>
+</ul>
+<h2 id="with-backporting">With backporting</h2>
+<ul>
+<li>Decide on the lowest ETS version to which the changes shall be backported ("lowest target")</li>
+<li>Fetch the branch containing the changes ("source branch")</li>
+<li>Checkout the <code>&lt;major&gt;.x.x</code> branch of the ETS component, where <code>&lt;major&gt;</code> is the lowest ETS version you chose ("target branch")</li>
+<li>Cherry-pick the commits of the source branch into the target branch, add <code>closes #&lt;id-of-pr&gt;</code> to the commit message</li>
+<li>For each ETS version larger than the lowest target, check out out its <code>&lt;major&gt;.x.x</code> branch, which becomes the new "target branch", and merge the previous target branch into it (e.g. <code>git checkout 2.x.x; git merge 1.x.x</code>) - this must happen in order, from lowest to largest major version</li>
+<li>Conflicts during merge must be handled as follows:</li>
+<li>If conflicts arise in <code>pom.xml</code> files, simply roll back the changes introduced by the merge on these files</li>
+<li>Handle new files which are introduced as a conflict that must be manually solved: if these files are not required on this particular version, they must be removed</li>
+<li>Handle other conflicts as usual</li>
+<li>Commit the merge result, and continue with the next major version branch, if any</li>
+<li>If no major version branches are "left", and the changes must become part of the upcoming ETS release, merge the <code>&lt;major&gt;.x.x</code> branch with the largest major version into <code>master</code></li>
+<li>Finally, push all changed branches</li>
+</ul>
+<p>It is important to note that we <em>always</em> need to merge each PR all the way up to <code>master</code>, even if this results in empty changesets for "higher" version branches and/or <code>master</code>. This guarantees that a PR which only applies to e.g. <code>1.x.x</code> that is followed by a PR which applies to <code>1.x.x</code> and <code>2.x.x</code> and <code>master</code> doesn't need to be handled when merging the latter PR.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../releasing/" class="btn btn-neutral float-right" title="Releasing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../building-libraries/" class="btn btn-neutral" title="Building libraries"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../building-libraries/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../releasing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>
