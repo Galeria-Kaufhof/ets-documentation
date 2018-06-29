@@ -76,7 +76,7 @@
         
             <li><a class="toctree-l4" href="#general-rules-and-workflow">General rules and workflow</a></li>
         
-            <li><a class="toctree-l4" href="#how-contributions-are-backported">How contributions are backported</a></li>
+            <li><a class="toctree-l4" href="#how-contributions-are-integrated">How contributions are integrated</a></li>
         
             <li><a class="toctree-l4" href="#without-backporting">Without backporting</a></li>
         
@@ -209,8 +209,8 @@
 <li>It is recommended to rebase your branch whenever there is a change in the master</li>
 <li>Contribute accompanying documentation changes to the <code>ets-documentation</code> repository the same way that you contribute your code changes to the ETS component repository - all of the above rules apply; this means if your code changes demand documentation changes, you must also create a branch and PR on the <code>ets-documentation</code> repository, and your code PR description must reference your documentation PR</li>
 </ul>
-<h2 id="how-contributions-are-backported">How contributions are backported</h2>
-<p>For each contribution, the release manager must decide if the contribution shall be backported</p>
+<h2 id="how-contributions-are-integrated">How contributions are integrated</h2>
+<p>For each contribution, the release manager must decide if the contribution shall only be integrated into the upcoming major ETS release, or if it should also be backported to already released ETS versions. </p>
 <h2 id="without-backporting">Without backporting</h2>
 <ul>
 <li>The pull request is merged into the master, and the commit message of the merge must contain <code>closes: #&lt;id-of-pr&gt;</code></li>
