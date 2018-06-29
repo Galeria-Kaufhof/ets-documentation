@@ -16,7 +16,7 @@ This document describes the code, architecture, and lifecycle rules that are obl
 
 ## Naming and namespacing rules
 
-- The correct spelling of the long form name of ETS is `Galeria Kaufhof eShop Technology Stack`, the correct spelling of the medium form name is `eShop Technology Stack`, and the short form is `ETS`.
+- The correct spelling of the long form name of ETS is `Galeria Kaufhof eShop Technology Stack`, the correct spelling of the medium form name is `eShop Technology Stack`, and the short form is `ETS`
 
 - ETS Software uses the Java namespace `de.kaufhof.ets`
 
