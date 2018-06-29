@@ -15,9 +15,12 @@ It is a software development framework and ecosystem consisting of:
 
 ## Table of contents
 
-### General documentation
-- [Rules](rules.md)
-- [Versioning](versioning.md)
+### Documentation for maintainers
+
+These documents support those that extend and maintain ETS components.
+
+- [Rules](Maintaining-ETS/rules.md)
+- [Versioning](Maintaining-ETS/versioning.md)
 
 
 ### Official ETS libraries
