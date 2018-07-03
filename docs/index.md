@@ -6,7 +6,7 @@ ETS is a collection of components and practices which allow to build application
 
 It is a software development framework and ecosystem consisting of:
 
-- A strictly managed and reliably versioned Maven POM set which allows to build Scala libraries or applications where conflict-free interoperation of all ETS-covered external dependencies their transitive dependencies is guaranteed
+- A strictly managed and reliably versioned Maven POM set which allows to build Scala libraries or applications where conflict-free interoperation of all ETS-covered external dependencies and their transitive dependencies is guaranteed
 
 - A collection of useful libraries built on top of this approach, which are guaranteed to work seamlessly with ETS-covered external dependencies and other ETS libraries
 
