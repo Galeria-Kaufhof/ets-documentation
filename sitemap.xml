@@ -2,67 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/architecture-and-philosophy/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Contributing-to-and-maintaining-ETS/building-libraries/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Contributing-to-and-maintaining-ETS/contributing/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Contributing-to-and-maintaining-ETS/releasing/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Contributing-to-and-maintaining-ETS/rules/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Contributing-to-and-maintaining-ETS/versioning/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Using-ETS/archetypes/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/Using-ETS/building-applications/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/Using-ETS/introduction/</loc>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/libraries/Akka-Stream-Utils/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/libraries/ElasticSearch-REST-Connector/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/libraries/ElasticSearch-REST-Connector/indexing/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/libraries/Filestorage/</loc>
-     <lastmod>2018-06-29</lastmod>
+     <lastmod>2018-07-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
