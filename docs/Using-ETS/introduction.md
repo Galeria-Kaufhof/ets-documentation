@@ -17,13 +17,17 @@ Some senseful use cases for ETS are:
 
 ### Building an application
 
-When building any kind of Scala application, a lot of non-functional aspects need to be covered:
+When building any kind of Scala application, a lot of non-functional aspects need to be covered.
 
-- You need to think about how to structure your code base
+Among others, you need to think about...
 
-- You need to manage the external dependencies of your application, initially and over time; this includes conflict management and subtle classpath problems which can arise if some of your dependencies pull identical transitive dependencies
+- ...how to structure your code base
 
-- You need to think about how implement and manage software tests
+- ...how to manage the external dependencies of your application, initially and over time; this includes conflict management and subtle classpath problems which can arise if some of your dependencies pull identical transitive dependencies
+
+- ...how to structure and manage software tests, during development and during release
+
+- ...how to handle cross-cutting concerns like logging and metrics
 
 
 Although ETS doesn't make these things go away, it can help you to start your project in a sane way and to keep it manageable and growable over time, because it offers several ready-to-use components and tools plus an opinionated take on the most important aspects of your project's lifecycle management.
@@ -31,8 +35,20 @@ Although ETS doesn't make these things go away, it can help you to start your pr
 While this limits your freedom in terms of code base structure, tool choice, dependency management and library choice a bit, this is actually key to reducing errors and increasing productivity, by reducing [yak shaving](https://en.wiktionary.org/wiki/yak_shaving) when starting off, and offering guard rails down the road.
 
 
-### Building a library
+At the same time, ETS doesn't limit you at all with regards to the type or size of Scala applications you can write. You can build full-fledged network services like HTTP APIs, or small and focused console scripts.
+
+You can also choose to not buy into our approach of building applications, and instead decide to only use the libraries we publish, as described below.
 
 
 ### Cherry picking ETS libraries for your own project
+
+Building applications "the ETS way" is to much of a corset for you?
+
+No problem, you can build and manage your project the way you see fit, and only use one or more of our ETS libraries. These are part of our ecosystem, but can easily be used just like any other external dependency. So if, for example, you are looking for a solid OpenStack Swift client library, have a look at [](../libraries/Filestorage/index.md).
+
+You can find a list of all ETS libraries on [the documentation's start page](../index.md).
+
+
+
+### Building (and sharing) a library
 
