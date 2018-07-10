@@ -1,5 +1,7 @@
 # ETS - The Galeria Kaufhof eShop Technology Stack
 
+[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Galeria-Kaufhof/ETS)
+
 ## Documentation project
 
 ### About ETS
